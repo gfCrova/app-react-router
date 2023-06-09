@@ -1,6 +1,6 @@
 # App React-Router
 
-<p> Aplicación pequeña pero rica en funciones que le permitirá realizar un seguimiento de sus contactos. </p>
+<p> Aplicación pequeña pero rica en funciones que le permitirá realizar un seguimiento de sus contactos. </p><br>
 
 Usaremos Vite para nuestro paquete y servidor de desarrollo para este tutorial. Necesitará Node.js instalado para la npmherramienta de línea de comandos.
 
@@ -28,6 +28,9 @@ Tenemos algo de CSS preescrito para este tutorial para que podamos concentrarnos
 👉 Copie/Pegue el tutorial CSS que se encuentra <a href="https://gist.githubusercontent.com/ryanflorence/ba20d473ef59e1965543fa013ae4163f/raw/499707f25a5690d490c7b3d54c65c65eb895930c/react-router-6.4-tutorial-css.css"> Aquí </a> en ```src/index.css```
 
 Este app creará, leerá, buscará, actualizará y eliminará datos. Una aplicación web típica probablemente estaría hablando con una API en su servidor web, pero vamos a usar el almacenamiento del navegador y falsificar la latencia de la red para mantener esto enfocado. Ninguno de estos códigos es relevante para React Router, así que adelante, cópielo y péguelo todo.
+
+La App se verá así: 
+<img src="https://reactrouter.com/_docs/tutorial/15.webp" />
 
 👉 Copie/pegue el módulo de datos del tutorial que se encuentra <a href="https://gist.githubusercontent.com/ryanflorence/1e7f5d3344c0db4a8394292c157cd305/raw/f7ff21e9ae7ffd55bfaaaf320e09c6a08a8a6611/contacts.js"> Aquí </a> en ```src/contacts.js```
 

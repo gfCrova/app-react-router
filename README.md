@@ -7,7 +7,7 @@ Usaremos Vite para nuestro paquete y servidor de desarrollo para este tutorial. 
 
 👉️ Abre tu terminal y arranca una nueva aplicación React con Vite:
 
-```console
+```shell
 npm create vite@latest name-of-your-project -- --template react
 # follow prompts
 cd <your new project directory>
@@ -85,7 +85,7 @@ Agreguemos el diseño global para esta aplicación.
 
 👉 Crear ```src/routesysrc/routes/root.jsx```
 
-``` console
+```console
 mkdir src/routes
 touch src/routes/root.jsx
 ```

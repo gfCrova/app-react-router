@@ -30,8 +30,8 @@ Tenemos algo de CSS preescrito para este tutorial para que podamos concentrarnos
 
 Este app creará, leerá, buscará, actualizará y eliminará datos. Una aplicación web típica probablemente estaría hablando con una API en su servidor web, pero vamos a usar el almacenamiento del navegador y falsificar la latencia de la red para mantener esto enfocado. Ninguno de estos códigos es relevante para React Router, así que adelante, cópielo y péguelo todo.
 
-La App se verá así: 
-<img src="https://reactrouter.com/_docs/tutorial/15.webp" />
+<!--La App se verá así: 
+<img src="https://reactrouter.com/_docs/tutorial/15.webp" />-->
 
 👉 Copie/pegue el módulo de datos del tutorial que se encuentra <a href="https://gist.githubusercontent.com/ryanflorence/1e7f5d3344c0db4a8394292c157cd305/raw/f7ff21e9ae7ffd55bfaaaf320e09c6a08a8a6611/contacts.js"> Aquí </a> en ```src/contacts.js```
 

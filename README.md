@@ -174,6 +174,7 @@ Cada vez que su aplicación arroje un error al renderizar, cargar datos o realiz
 
 👉 Crear un componente de página de error
 
+```  js
 touch src/error-page.jsx
 import { useRouteError } from "react-router-dom";
 
@@ -191,8 +192,11 @@ export default function ErrorPage() {
     </div>
   );
 }
+```
+  
 👉 Establecer <ErrorPage>como errorElementen la ruta raíz
 
+``` js
 /* previous imports */
 import ErrorPage from "./error-page";
 
@@ -203,12 +207,14 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
 ]);
-
+  
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router} />
   </React.StrictMode>
 );
+```
+  
 La página de error ahora debería verse así:
 
 nueva página de error, pero sigue siendo fea
@@ -222,12 +228,16 @@ La interfaz de usuario de la ruta de contacto
 En lugar de una página 404 "No encontrada", queremos mostrar algo en las URL a las que nos hemos vinculado. Para eso, necesitamos hacer una nueva ruta.
 
 👉 Crear el módulo de ruta de contacto
-
+  
+``` console
 touch src/routes/contact.jsx
+```
+
 👉 Agregue la interfaz de usuario del componente de contacto
 
 Es solo un montón de elementos, siéntete libre de copiar/pegar.
-
+  
+``` js
 import { Form } from "react-router-dom";
 
 export default function Contact() {
@@ -318,10 +328,13 @@ function Favorite({ contact }) {
     </Form>
   );
 }
+```
+  
 Ahora que tenemos un componente, conectémoslo a una nueva ruta.
 
 👉 Importa el componente de contacto y crea una nueva ruta
 
+``` js
 /* existing imports */
 import Contact from "./routes/contact";
 
@@ -338,7 +351,9 @@ const router = createBrowserRouter([
 ]);
 
 /* existing code */
-¡Ahora, si hacemos clic en uno de los enlaces o visitamos, /contacts/1obtenemos nuestro nuevo componente!
+```
+  
+¡Ahora, si hacemos clic en uno de los enlaces o visitamos, /contacts/1 obtenemos nuestro nuevo componente!
 
 representación de ruta de contacto sin el diseño principal
 Sin embargo, no está dentro de nuestro diseño raíz 😠
@@ -351,6 +366,7 @@ Lo hacemos haciendo que la ruta de contacto sea secundaria de la ruta raíz.
 
 👉 Mueva la ruta de contactos para que sea un elemento secundario de la ruta raíz
 
+``` js
 const router = createBrowserRouter([
   {
     path: "/",
@@ -364,11 +380,13 @@ const router = createBrowserRouter([
     ],
   },
 ]);
+```
+  
 Ahora volverá a ver el diseño raíz, pero una página en blanco a la derecha. Necesitamos decirle a la ruta raíz dónde queremos que represente sus rutas secundarias. Eso lo hacemos con <Outlet>.
 
-Encuentra el <div id="detail">y pon una salida dentro.
+Encuentra el ```<div id="detail">``` y pon una salida dentro.
 
-👉 Renderizar un<Outlet>
+👉 Renderizar un ```<Outlet>```
 
 import { Outlet } from "react-router-dom";
 
